@@ -1,0 +1,145 @@
+// Header wrapper and logo
+.header {
+
+    &__inner {
+        position: relative;
+        display: flex;
+        background: $white; 
+
+        @media (min-width: $mobile-width) {
+            height: 66px;
+            padding: 0 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: $tablet-width) {
+            border-bottom: 1px solid $grey-light;
+        }
+    }
+
+    &__logo {
+        
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+    }
+
+    &__logo-image {
+        
+        @media (min-width: $mobile-width) {
+            width: 34px;
+            height: 38px;
+        }
+    
+        @media (min-width: $tablet-width) {
+            width: 174px;
+            height: 52px;
+        }
+    
+        @media (min-width: $desktop-width) {
+            width: 202px;
+            height: 59px;
+        }
+    }
+
+    &__logo-mobile {
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        @media (min-width: $tablet-width) {
+            display: none;
+        }
+
+    }
+
+    &__logo-mobile-text {
+        width: 101px;
+        height: 18px;
+    }
+
+}
+
+// Burger menu
+.burger {
+    border: transparent;
+    background: transparent;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    
+    &__icon {
+        width: 24px;
+        height: 24px;
+
+        &--active {
+            display: block;
+        }
+
+        &--hidden {
+            display: none;
+        }
+        
+    }
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+
+}
+
+// Navigation
+.navigation {
+    
+    @media (max-width: $tablet-width) {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+
+    &__link {
+        font-family: "Oswald";
+        font-style: normal;
+        text-decoration: none;
+        
+        @media (max-width: $tablet-width) {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+            color: $black;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 23px 0 22px 0;
+
+            border-bottom: 1px solid $grey-light;
+        }
+    }
+
+    &--hidden {
+        @media (max-width: $tablet-width) {
+            display: none;
+        }
+    }
+
+}
