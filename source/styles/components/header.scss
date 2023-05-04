@@ -23,6 +23,11 @@
             align-items: center;
         }
 
+        @media (min-width: $desktop-width) {
+            height: 140px;
+            padding: 70px 110px 40px 110px;
+        }
+
     }
 
     &__logo {
@@ -136,10 +141,17 @@
             color: $black;
 
             &--active {
-                padding-bottom: 4px;
+                padding-bottom: 6px;
                 border-bottom: 2px solid $green;
             }
 
+        }
+
+        @media (min-width: $desktop-width) {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: $black; // заменить на белый
         }
 
         &:hover {
