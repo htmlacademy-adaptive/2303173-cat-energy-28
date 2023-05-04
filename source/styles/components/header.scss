@@ -16,6 +16,13 @@
         @media (max-width: $tablet-width) {
             border-bottom: 1px solid $grey-light;
         }
+
+        @media (min-width: $tablet-width) {
+            height: 56px;
+            padding: 0 30px;
+            align-items: center;
+        }
+
     }
 
     &__logo {
@@ -75,6 +82,85 @@
 
 }
 
+
+// Navigation
+.navigation {
+    
+    @media (max-width: $tablet-width) {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+
+    &__list {
+        
+        @media (min-width: $tablet-width) {
+            display: flex;
+        }
+
+    }
+
+    &__item:not(:last-child) {
+
+        @media (min-width: $tablet-width) {
+            margin-right: 34px;
+        }
+
+    }
+
+    &__link {
+        font-family: "Oswald";
+        font-style: normal;
+        text-decoration: none;
+        
+        @media (max-width: $tablet-width) {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+            color: $black;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 23px 0 22px 0;
+
+            border-bottom: 1px solid $grey-light;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: $black;
+
+            &--active {
+                padding-bottom: 4px;
+                border-bottom: 2px solid $green;
+            }
+
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+    }
+
+    &--hidden {
+        @media (max-width: $tablet-width) {
+            display: none;
+        }
+    }
+
+}
+
+
 // Burger menu
 .burger {
     border: transparent;
@@ -101,45 +187,6 @@
 
     @media (min-width: $tablet-width) {
         display: none;
-    }
-
-}
-
-// Navigation
-.navigation {
-    
-    @media (max-width: $tablet-width) {
-        position: absolute;
-        left: 50%;
-        top: 100%;
-        transform: translateX(-50%);
-        width: 100%;
-    }
-
-    &__link {
-        font-family: "Oswald";
-        font-style: normal;
-        text-decoration: none;
-        
-        @media (max-width: $tablet-width) {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 20px;
-            color: $black;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 23px 0 22px 0;
-
-            border-bottom: 1px solid $grey-light;
-        }
-    }
-
-    &--hidden {
-        @media (max-width: $tablet-width) {
-            display: none;
-        }
     }
 
 }
