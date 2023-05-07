@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--absolute">
       <div class="header__inner">
         
         <a class="header__logo" href="#">
@@ -50,6 +50,22 @@
         </nav>
       </div>
     </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__description">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/hero/hero-can-desktop.png">
+          <source media="(min-width: 768px)" srcset="./img/hero/hero-can-tablet.png">
+          <img class="hero__product-image" src="./img/hero/hero-can-mobile.png" alt="Кэт энерджи про. Курица. 500 грамм.">
+        </picture>
+        <a class="hero__link" href="./form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
+        <div class="hero__background">
+          <img class="hero__background-image" src="./img/hero/hero-bg.jpg">
+        </div> 
+      </section>
+    </main>
      <script src="./js/index.js"></script>
   </body>
 </html>
