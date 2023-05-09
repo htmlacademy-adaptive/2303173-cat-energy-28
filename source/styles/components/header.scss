@@ -156,8 +156,13 @@
             color: $black;
 
             &--active {
-                padding-bottom: 6px;
+                padding-bottom: 8px;
                 border-bottom: 2px solid $green;
+            }
+
+            &--active-green {
+                border-bottom: 2px solid $green;
+                padding-bottom: 8px;
             }
 
         }
@@ -170,6 +175,12 @@
 
             &--active {
                 border-bottom: 2px solid $white;
+                padding-bottom: 6px;
+            }
+
+            &--active-green {
+                border-bottom: 2px solid $green;
+                padding-bottom: 6px;
             }
 
             &--white {
