@@ -13,6 +13,14 @@
         margin: 524px 30px 0 30px;
     }
 
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        gap: 80px;
+        margin: 0 auto;
+        margin-top: 82px;
+        max-width: 1220px;
+    }
+
     &__background {
         position: relative;
         background: $grey;
@@ -24,6 +32,11 @@
 
         @media (min-width: $tablet-width) {
             padding: 78px 316px 56px 52px;
+        }
+
+        @media (min-width: $desktop-width) {
+            padding: 76px 67px 60px 52px;
+            min-width: 570px;
         }
 
     }
@@ -54,6 +67,10 @@
             margin: 0;
         }
 
+        @media (min-width: $desktop-width) {
+            margin-left: 162px;
+        }
+
     }
 
     &__text {
@@ -75,6 +92,10 @@
             margin-top: 24px;
         }
 
+        @media (min-width: $desktop-width) {
+            margin-top: 72px;
+        }
+
     }
 
     &__link-container {
@@ -85,6 +106,10 @@
 
         @media (min-width: $tablet-width) {
             margin-top: 52px;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin-top: 28px;
         }
 
     }
@@ -139,6 +164,11 @@
             right: 62px;
         }
 
+        @media (min-width: $desktop-width) {
+            top: 40px;
+            left: 52px;
+        }
+
         &--second {
 
             @media (max-width: 767px) {
@@ -149,6 +179,11 @@
             @media (min-width: $tablet-width) {
                 top: 90px;
                 right: 28px;
+            }
+
+            @media (min-width: $desktop-width) {
+                top: 46px;
+                left: 34px;
             }
     
         }
@@ -167,6 +202,11 @@
             height: 211px;
         }
 
+        @media (min-width: $desktop-width) {
+            width: 100px;
+            height: 106px;
+        }
+
         &--second {
 
             @media (min-width: $mobile-width) {
@@ -177,6 +217,11 @@
             @media (min-width: $tablet-width) {
                 width: 268px;
                 height: 200px;
+            }
+
+            @media (min-width: $desktop-width) {
+                width: 134px;
+                height: 100px;
             }
 
         }
