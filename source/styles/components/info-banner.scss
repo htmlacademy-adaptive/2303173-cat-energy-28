@@ -1,5 +1,6 @@
 .info-banner {
     display: flex;
+    flex-direction: column;
 
     @media (min-width: $mobile-width) {
         margin: 20px 20px 0 20px;
@@ -7,7 +8,7 @@
 
     @media (min-width: $tablet-width) {
         margin: 45px 0 0 0;
-        justify-content: center;
+        padding: 0 30px 48px 30px;
         border-bottom: 1px solid $grey-light;
     }
 
@@ -16,6 +17,27 @@
         margin-top: 70px;
         max-width: 1220px;
         border: transparent;
+        padding: 0;
+    }
+
+    &__title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+
+        @media (min-width: $mobile-width) {
+            font-size: 36px;
+            line-height: 40px;
+            margin: 0 0 40px 0;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 60px;
+            line-height: 60px;
+            margin: 0 0 32px 0;
+        }
+
     }
 
     &__container {
@@ -27,8 +49,8 @@
         }
 
         @media (min-width: $tablet-width) {
-            justify-content: space-between;
             gap: 38px;
+            align-items: center;
         }
 
         @media (min-width: $desktop-width) {
