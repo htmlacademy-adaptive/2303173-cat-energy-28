@@ -1,0 +1,232 @@
+.example {
+
+    @media (min-width: $mobile-width) {
+        background: $grey;
+        padding: 26px 20px 40px 20px;
+        margin-top: 50px;
+    }
+
+    @media (min-width: $tablet-width) {
+        background: $white;
+        padding: 44px 30px 110px 30px;
+        margin-top: 44px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0 auto;
+        margin-top: 70px;
+        max-width: 1440px;
+        padding: 0 110px 86px 110px;
+    }
+
+    &__title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+        margin: 0;
+
+        @media (min-width: $mobile-width) {
+            font-size: 36px;
+            line-height: 40px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+    }
+
+
+    &__text {
+        color: $grey-dark;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+
+        @media (min-width: $mobile-width) {
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 64px;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin-top: 146px;
+            max-width: 436px;
+        }
+
+    }
+
+    &__container {
+        display: flex;
+
+        @media (min-width: $mobile-width) {
+            flex-direction: column;
+            align-items: center;
+            gap: 34px;
+        }
+
+        @media (min-width: $tablet-width) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @media (min-width: $desktop-width) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: start;
+        }
+
+    }
+
+    &__info-wrapper {
+        display: flex;
+
+        @media (min-width: $mobile-width) {
+            gap: 32px;
+            margin-top: 20px;
+        }
+
+        @media (min-width: $tablet-width) {
+            gap: 42px;
+            margin-top: 54px;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin-top: 68px;
+        }
+
+    }
+
+    &__info-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: $mobile-width) {
+            width: 124px;
+            height: 56px;
+            border: 1px solid $grey-special;
+            border-radius: 3px;
+            padding-top: 14px;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 162px;
+            height: 72px;
+            padding-top: 16px;
+        }
+
+    }
+
+    &__info-text {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+
+        @media (min-width: $mobile-width) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 30px;
+            line-height: 38px;
+        }
+
+    }
+
+    &__additional-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (min-width: $mobile-width) {
+            background: $grey;
+            text-align: center;
+            bottom: -25%;
+        }
+
+        @media (min-width: $tablet-width) {
+            background: $white;
+            bottom: -10%;
+        }
+
+        @media (min-width: $desktop-width) {
+            background: $grey;
+        }
+
+    }
+
+    &__additional-text {
+        color: $grey-dark;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        
+        @media (min-width: $mobile-width) {
+            font-size: 12px;
+            line-height: 12px;
+            width: 88px;
+            padding: 0 12px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 14px;
+            line-height: 14px;
+            width: 132px;
+            padding: 0;
+        }
+
+    }
+
+    &__price {
+        display: flex;
+
+        @media (min-width: $mobile-width) {
+            flex-direction: row;
+            gap: 2px;  
+        }
+
+        @media (min-width: $tablet-width) {
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 46px;
+            justify-content: center;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin-top: 60px;
+            flex-direction: row;
+            gap: 64px;
+        }
+
+    }
+
+    &__price-text {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+        line-height: 20px;
+
+        @media (min-width: $mobile-width) {
+            font-size: 14px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 20px;
+            text-align: right;
+        }
+
+    }
+
+}
