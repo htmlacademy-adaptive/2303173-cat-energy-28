@@ -1,4 +1,5 @@
 .example {
+    position: relative;
 
     @media (min-width: $mobile-width) {
         background: $grey;
@@ -8,7 +9,7 @@
 
     @media (min-width: $tablet-width) {
         background: $white;
-        padding: 44px 30px 110px 30px;
+        padding: 44px 30px 716px 30px;
         margin-top: 44px;
     }
 
@@ -17,6 +18,30 @@
         margin-top: 70px;
         max-width: 1440px;
         padding: 0 110px 86px 110px;
+    }
+
+    &__background {
+        position: absolute;
+
+        @media (min-width: $mobile-width) {
+            display: none;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 100%;
+            height: 462px;
+            background: $grey;
+            display: block;
+            bottom: 0;
+            left: 0;
+            max-width: 1439px;
+            z-index: 0;
+        }
+
+        @media (min-width: $desktop-width) {
+            max-width: 1440px;
+        }
+
     }
 
     &__title {
@@ -44,6 +69,8 @@
         font-family: "Lato";
         font-style: normal;
         font-weight: 400;
+        position: relative;
+        z-index: 5;
 
         @media (min-width: $mobile-width) {
             font-size: 14px;
@@ -190,6 +217,8 @@
 
     &__price {
         display: flex;
+        position: relative;
+        z-index: 5;
 
         @media (min-width: $mobile-width) {
             flex-direction: row;
