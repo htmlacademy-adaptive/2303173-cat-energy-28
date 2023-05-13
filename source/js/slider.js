@@ -12,8 +12,3 @@ const mySuperFunc = ()=>{
 
 slider.oninput = mySuperFunc
 mySuperFunc()
-
-// setInterval(() => {
-//     const color = document.body.style.backgroundColor;
-//     document.body.style.backgroundColor = color === 'red' ? 'transparent' : 'red'
-//   }, 100);
