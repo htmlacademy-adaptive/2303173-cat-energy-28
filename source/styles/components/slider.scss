@@ -17,7 +17,7 @@
 }
 
 
-.wrapper {
+.compare-slider__wrapper {
     position: relative;
    
     @media (min-width: $mobile-width) {
@@ -39,12 +39,12 @@
 
 }
 
-.images {
+.compare-slider__images {
     width: 100%;
     height: 100%;
     display: flex;
 
-    & .img-1 {
+    & .compare-slider__image-first {
         height: 100%;
         width: 100%;
         background: url("../img/example/slim-cat-example.png") no-repeat;
@@ -54,7 +54,7 @@
         background-position: 100% 0;
     }
 
-    & .img-2 {
+    & .compare-slider__image-second {
         height: 100%;
         width: 100%;
         background: url("../img/example/fat-cat-example.png") no-repeat;
@@ -64,7 +64,7 @@
 
 }
 
-.slider {
+.compare-slider__slider {
 
     @media (min-width: $mobile-width) {
         position: absolute;
@@ -102,7 +102,7 @@
 
     }
 
-    & .drag-line {
+    & .compare-slider__drag-line {
 
         @media (min-width: $mobile-width) {
             width: 4px;
