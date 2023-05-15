@@ -94,16 +94,16 @@
         align-items: center;
         text-decoration: none;
 
-        &:hover {
-            opacity: 0.5;
-        }
-
         @media (min-width: $mobile-width) {
             gap: 16px;
         }
 
         @media (min-width: $tablet-width) {
             gap: 25px;
+        }
+
+        &:active {
+            opacity: 0.6;
         }
 
     }

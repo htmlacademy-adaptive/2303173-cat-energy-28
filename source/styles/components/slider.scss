@@ -3,8 +3,8 @@
     @media (min-width: $desktop-width) {
         position: absolute;
         z-index: 6;
-        top: 22px;
-        right: 0;
+        top: 0;
+        right: 110px;
     }
 
     &__drag-icon {
