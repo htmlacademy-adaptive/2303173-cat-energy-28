@@ -3,7 +3,7 @@
     margin: 0 auto;
 
     &__inner {
-        background: $grey;
+        background: $grey-background;
         display: flex;
 
         @media (min-width: $mobile-width) {
@@ -14,7 +14,7 @@
 
         @media (max-width: 767px) {
             & > *:not(:last-child) {
-                border-bottom: 1px solid $grey-light;
+                border-bottom: 1px solid $grey-line-second;
                 padding-bottom: 20px;
             }
 
@@ -88,12 +88,13 @@
         font-weight: 400;
         line-height: 20px;
         font-size: 16px;
-        color: $grey-dark;
+        color: $grey-very-dark;
     }
 
     &__link {
         display: flex;
         align-items: center;
+        text-decoration: none;
         
         @media (min-width: $mobile-width) {
             justify-content: space-between;

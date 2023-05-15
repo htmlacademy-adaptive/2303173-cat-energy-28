@@ -4,8 +4,13 @@
 
 body {
     min-width: 320px;
-    background-color: $white;
     margin: 0;
+    background: $white;    
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 ul {
@@ -18,23 +23,10 @@ li {
     display: block;
 }
 
-h1 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 
 p {
     margin: 0;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }

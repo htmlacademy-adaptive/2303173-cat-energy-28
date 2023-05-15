@@ -1,102 +1,19 @@
 .info-banner {
     display: flex;
-    flex-direction: column;
+    position: relative;
 
     @media (min-width: $mobile-width) {
-        margin: 20px 20px 0 20px;
+        align-items: center;
+        gap: 20px;
     }
 
     @media (min-width: $tablet-width) {
-        margin: 45px 0 0 0;
-        padding: 0 30px 48px 30px;
-        border-bottom: 1px solid $grey-light;
-    }
-
-    @media (min-width: $desktop-width) {
-        margin: 0 auto;
-        margin-top: 70px;
-        max-width: 1220px;
-        border: transparent;
-        padding: 0;
-    }
-
-    &__title {
-        font-family: "Oswald";
-        font-style: normal;
-        font-weight: 400;
-        color: $black;
-
-        @media (min-width: $mobile-width) {
-            font-size: 36px;
-            line-height: 40px;
-            margin: 0 0 40px 0;
-        }
-
-        @media (min-width: $tablet-width) {
-            font-size: 60px;
-            line-height: 60px;
-            margin: 0 0 32px 0;
-        }
-
-    }
-
-    &__container {
-        display: flex;
-
-        @media (min-width: $mobile-width) {
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        @media (min-width: $tablet-width) {
-            gap: 38px;
-            align-items: center;
-        }
-
-        @media (min-width: $desktop-width) {
-            flex-direction: row;
-            gap: 100px;
-        }
-
-    }
-
-    &__container-line {
-        display: flex;
-
-        @media (min-width: $mobile-width) {
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        @media (min-width: $tablet-width) {
-            flex-direction: row;
-            gap: 154px;
-        }
-
-        @media (min-width: $desktop-width) {
-            gap: 100px;
-        }
-
-    }
-
-    &__item {
-        display: flex;
-        position: relative;
-
-        @media (min-width: $mobile-width) {
-            align-items: center;
-            gap: 20px;
-        }
-
-        @media (min-width: $tablet-width) {
-            padding: 40px 4px 56px 0;
-            max-width: 230px;
-            max-height: 280px;
-            align-items: start;
-            flex-direction: column;
-            gap: 0;
-        }
-
+        padding: 40px 4px 56px 0;
+        max-width: 230px;
+        max-height: 280px;
+        align-items: start;
+        flex-direction: column;
+        gap: 0;
     }
 
     &__icon {
@@ -116,7 +33,7 @@
         font-family: "Lato";
         font-style: normal;
         font-weight: 400;
-        color: $grey-dark;
+        color: $grey-very-dark;
 
         @media (min-width: $mobile-width) {
             font-size: 14px;
@@ -135,7 +52,7 @@
         font-family: "Oswald";
         font-style: normal;
         font-weight: 400;
-        color: $grey;
+        color: $grey-background;
 
         @media (max-width: 767px) {
             display: none;

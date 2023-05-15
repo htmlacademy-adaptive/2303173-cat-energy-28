@@ -1,32 +1,38 @@
-// Variables
+// Переменные
 @import "./global/variables.scss";
 
-// Global styles
+// Глобальные стили
 @import "./global/global.scss";
 
-// Fonts
+// Шрифты
 @import "./global/fonts.scss";
 
-// Header
+// Index.html 
+@import "./components/index-page.scss";
+
+// Хедер
 @import "./components/header.scss";
 
-// Hero
+// Хиро блок
 @import "./components/hero.scss";
 
-// Catalog banner
+// Каталог баннер
 @import "./components/catalog-banner.scss";
 
-// Info banner
+// Инфо баннер
 @import "./components/info-banner.scss";
 
-// Location and map
+// Блок с адресом
+@import "./components/adress-block.scss";
+
+// Карта
 @import "./components/map.scss";
 
-// Example
-@import "./components/example.scss";
-
-// Compare slider
-@import "./components/slider.scss";
-
-// Footer
+// Футер
 @import "./components/footer.scss";
+
+// Пример
+@import "./components/info-item.scss";
+
+// Слайдер с котиками
+@import "./components/slider.scss";

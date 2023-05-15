@@ -1,4 +1,4 @@
-// Header wrapper and logo
+// Контейнер
 .header {
 
     &--absolute {
@@ -17,7 +17,7 @@
     &__inner {
         position: relative;
         display: flex;
-        background: $white; 
+        background: $white;
 
         @media (min-width: $mobile-width) {
             height: 66px;
@@ -27,7 +27,7 @@
         }
 
         @media (max-width: 767px) {
-            border-bottom: 1px solid $grey-light;
+            border-bottom: 1px solid $grey-line;
         }
 
         @media (min-width: $tablet-width) {
@@ -44,19 +44,20 @@
 
     }
 
-    &__logo {
-        
-        &:hover {
-            opacity: 0.8;
-        }
+}
 
-        &:active {
-            opacity: 0.6;
-        }
+// Логотип
+.header__logo {
 
+    &:hover {
+        opacity: 0.8;
     }
 
-    &__logo-image {
+    &:active {
+        opacity: 0.6;
+    }
+
+    & .header__logo-image {
         
         @media (min-width: $mobile-width) {
             width: 34px;
@@ -72,36 +73,68 @@
             width: 202px;
             height: 59px;
         }
-    }
-
-    &__logo-mobile {
-        position: absolute;
-        top: 24px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        &:hover {
-            opacity: 0.8;
-        }
-
-        &:active {
-            opacity: 0.6;
-        }
-
-        @media (min-width: $tablet-width) {
-            display: none;
-        }
 
     }
 
-    &__logo-mobile-text {
+}
+
+// Текстовый логотип на мобилке
+.header__logo-mobile {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+
+    & .header__logo-mobile-text {
         width: 101px;
         height: 18px;
     }
 
 }
 
-// Navigation
+// Бургер меню
+.burger {
+    border: transparent;
+    background: transparent;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    
+    &__icon {
+        width: 24px;
+        height: 24px;
+
+        &--active {
+            display: block;
+        }
+
+        &--hidden {
+            display: none;
+        }
+        
+    }
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+
+}
+
+// Навигация
 .navigation {
     
     @media (max-width: 767px) {
@@ -146,7 +179,7 @@
             justify-content: center;
             padding: 23px 0 22px 0;
 
-            border-bottom: 1px solid $grey-light;
+            border-bottom: 1px solid $grey-line;
         }
 
         @media (min-width: $tablet-width) {
@@ -203,36 +236,6 @@
         @media (max-width: 767px) {
             display: none;
         }
-    }
-
-}
-
-// Burger menu
-.burger {
-    border: transparent;
-    background: transparent;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    
-    &__icon {
-        width: 24px;
-        height: 24px;
-
-        &--active {
-            display: block;
-        }
-
-        &--hidden {
-            display: none;
-        }
-        
-    }
-
-    @media (min-width: $tablet-width) {
-        display: none;
     }
 
 }
