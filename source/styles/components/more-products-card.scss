@@ -1,0 +1,98 @@
+@import "./grey-button.scss";
+
+.more-card {
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+        width: 324px;
+        height: 512px;
+        flex-direction: column-reverse;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 244px;
+    }
+
+    &__inner {
+
+        @media (min-width: $tablet-width) {
+            width: 324px;
+            height: 430px;
+            border: 2px solid $grey-background;
+            padding: 52px 38px 38px 38px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 244px;
+            padding: 50px 37px 40px 37px;
+        }
+
+    }
+
+    &__title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+
+        @media (min-width: $mobile-width) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 48px;
+        }
+
+    }
+
+    &__text {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+
+        @media (min-width: $tablet-width) {
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+            margin-top: 24px;
+            padding: 0 10px;
+        }
+
+        @media (min-width: $desktop-width) {
+            padding: 0;
+        }
+
+    }
+
+    &__image {
+
+        @media (min-width: $mobile-width) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 60px;
+            height: 60px;
+            margin: 0 92px;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin: 0 52px;
+        }
+
+    }
+
+}
+
+
+.grey-button--card {
+
+    @media (min-width: $tablet-width) {
+        margin-top: 80px;
+    }
+
+}
