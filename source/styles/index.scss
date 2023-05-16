@@ -10,6 +10,9 @@
 // Index.html 
 @import "./components/index-page.scss";
 
+// Catalog.html
+@import "./components/catalog-page.scss";
+
 // Хедер
 @import "./components/header.scss";
 
@@ -36,3 +39,9 @@
 
 // Слайдер с котиками
 @import "./components/slider.scss";
+
+// Карточка товара
+@import "./components/product-card.scss";
+
+// Зеленая кнопка
+@import "./components/green-button.scss";
