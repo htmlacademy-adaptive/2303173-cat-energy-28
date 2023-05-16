@@ -3,6 +3,11 @@
 .more-card {
     display: flex;
 
+    @media (min-width: $mobile-width) {
+        width: 320px;
+        height: 210px;
+    }
+
     @media (min-width: $tablet-width) {
         width: 324px;
         height: 512px;
@@ -14,6 +19,11 @@
     }
 
     &__inner {
+
+        @media (min-width: $mobile-width) {
+            border-bottom: 1px solid $grey-line-fourth;
+            padding: 25px 20px;
+        }
 
         @media (min-width: $tablet-width) {
             width: 324px;
@@ -37,6 +47,8 @@
         @media (min-width: $mobile-width) {
             font-size: 16px;
             line-height: 20px;
+            text-align: center;
+            margin-top: 22px;
         }
 
         @media (min-width: $tablet-width) {
@@ -52,6 +64,13 @@
         font-family: "Lato";
         font-style: normal;
         font-weight: 400;
+
+        @media (min-width: $mobile-width) {
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            margin-top: 8px;
+        }
 
         @media (min-width: $tablet-width) {
             font-size: 16px;
@@ -72,6 +91,7 @@
         @media (min-width: $mobile-width) {
             width: 30px;
             height: 30px;
+            margin: 0 125px;
         }
 
         @media (min-width: $tablet-width) {
@@ -90,6 +110,10 @@
 
 
 .grey-button--card {
+
+    @media (min-width: $mobile-width) {
+        margin-top: 22px;
+    }
 
     @media (min-width: $tablet-width) {
         margin-top: 80px;
