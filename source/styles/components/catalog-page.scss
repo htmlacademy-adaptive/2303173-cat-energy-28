@@ -48,4 +48,16 @@
         align-items: center;
     }
 
+    @media (min-width: $tablet-width) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-top: 84px;
+        gap: 80px;
+    }
+
 }
