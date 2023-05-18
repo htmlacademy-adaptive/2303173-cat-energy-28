@@ -6,6 +6,7 @@
 
     @media (min-width: $mobile-width) {
         flex-wrap: wrap;
+        padding: 12px 0 19px 0;
     }
 
     @media (min-width: $tablet-width) {
@@ -26,12 +27,18 @@
         display: flex;
         align-items: center;
 
+        @media (min-width: $mobile-width) {
+            width: 100%;
+        }
+
         @media (min-width: $tablet-width) {
             width: 64%;
+            margin-top: 0;
         }
 
         @media (min-width: $desktop-width) {
             width: 35%;
+            margin-top: 0;
         }
 
     }
@@ -41,6 +48,11 @@
         font-style: normal;
         font-weight: 400;
         color: $black;
+
+        @media (min-width: $mobile-width) {
+            font-size: 16px;
+            line-height: 16px;
+        }
 
         @media (min-width: $tablet-width) {
             font-size: 20px;
@@ -53,15 +65,22 @@
         display: flex;
         align-items: center;
 
+        @media (min-width: $mobile-width) {
+            width: 50%;
+            margin-top: 13px;
+        }
+
         @media (min-width: $tablet-width) {
             width: 22%;
             flex-direction: row-reverse;
+            margin-top: 0;
         }
 
         @media (min-width: $desktop-width) {
             width: 27%;
             padding-left: 13px;
             flex-direction: row;
+            margin-top: 0;
         }
 
     }
@@ -70,13 +89,20 @@
         display: flex;
         align-items: center;
 
+        @media (min-width: $mobile-width) {
+            width: 50%;
+            flex-direction: row-reverse;
+            margin-top: 13px;
+        }
+
         @media (min-width: $tablet-width) {
             width: 14%;
-            flex-direction: row-reverse;
+            margin-top: 0;
         }
         
         @media (min-width: $desktop-width) {
             padding-left: 14px;
+            margin-top: 0;
             flex-direction: row;
         }
 
@@ -87,6 +113,11 @@
         font-style: normal;
         font-weight: 400;
         color: $grey-very-dark;
+        
+        @media (min-width: $mobile-width) {
+            font-size: 14px;
+            line-height: 14px;
+        }
 
         @media (min-width: $tablet-width) {
             font-size: 16px;
@@ -99,6 +130,7 @@
 
         @media (min-width: $mobile-width) {
             width: 100%;
+            margin-top: 15px;
         }
 
         @media (min-width: $tablet-width) {
