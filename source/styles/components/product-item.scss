@@ -1,0 +1,79 @@
+@import "./green-button.scss";
+
+.product-item {
+    display: flex;
+    border-bottom: 1px solid $grey-line-third;
+
+    @media (min-width: $desktop-width) {
+        width: 894px;
+        padding: 15px 0 16px 0;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: $desktop-width) {
+            width: 35%;
+        }
+
+    }
+
+    &__name-title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+
+        @media (min-width: $tablet-width) {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+    }
+
+    &__size {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: $desktop-width) {
+            width: 27%;
+            padding-left: 13px;
+        }
+
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        
+        @media (min-width: $desktop-width) {
+            width: 10%;
+            padding-left: 14px;
+        }
+
+    }
+
+    &__text {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        color: $grey-very-dark;
+
+        @media (min-width: $tablet-width) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+    }
+
+    &__button {
+
+        @media (min-width: $desktop-width) {
+            width: 28%;
+            padding-left: 6px;
+        }
+
+    }
+
+}

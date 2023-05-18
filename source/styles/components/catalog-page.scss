@@ -121,8 +121,15 @@
 
     }
 
-    // &__container {
+    &__container {
+        border-top: 1px solid $grey-line-third; 
+        display: flex;
+        flex-direction: column;
 
-    // }
+        @media (min-width: $desktop-width) {
+            width: 894px;
+        }
+
+    }
 
 }
