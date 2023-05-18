@@ -115,8 +115,18 @@
     &__wrapper {
         display: flex;
 
+        @media (min-width: $mobile-width) {
+            flex-direction: column;
+            gap: 34px;
+        }
+
+        @media (min-width: $tablet-width) {
+            gap: 69px;
+        }
+
         @media (min-width: $desktop-width) {
             gap: 80px;
+            flex-direction: row;
         }
 
     }

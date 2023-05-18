@@ -66,3 +66,15 @@
     }
 
 }
+
+.adress--grey {
+
+    @media (min-width: $mobile-width) {
+        background: $grey-background;
+    }
+
+    @media (min-width: $desktop-width) {
+        background: $white;
+    }
+
+}

@@ -4,14 +4,31 @@
     display: flex;
     border-bottom: 1px solid $grey-line-third;
 
+    @media (min-width: $mobile-width) {
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: $tablet-width) {
+        border-left: 1px solid $grey-line-third;
+        border-right: 1px solid $grey-line-third;
+        padding: 26px 38px 28px 38px;
+    }
+
     @media (min-width: $desktop-width) {
         width: 894px;
         padding: 15px 0 16px 0;
+        border-left: transparent;
+        border-right: transparent;
+        flex-wrap: nowrap;
     }
 
     &__name {
         display: flex;
         align-items: center;
+
+        @media (min-width: $tablet-width) {
+            width: 64%;
+        }
 
         @media (min-width: $desktop-width) {
             width: 35%;
@@ -36,9 +53,15 @@
         display: flex;
         align-items: center;
 
+        @media (min-width: $tablet-width) {
+            width: 22%;
+            flex-direction: row-reverse;
+        }
+
         @media (min-width: $desktop-width) {
             width: 27%;
             padding-left: 13px;
+            flex-direction: row;
         }
 
     }
@@ -46,10 +69,15 @@
     &__price {
         display: flex;
         align-items: center;
+
+        @media (min-width: $tablet-width) {
+            width: 14%;
+            flex-direction: row-reverse;
+        }
         
         @media (min-width: $desktop-width) {
-            width: 10%;
             padding-left: 14px;
+            flex-direction: row;
         }
 
     }
@@ -69,9 +97,18 @@
 
     &__button {
 
+        @media (min-width: $mobile-width) {
+            width: 100%;
+        }
+
+        @media (min-width: $tablet-width) {
+            margin-top: 25px;
+        }
+
         @media (min-width: $desktop-width) {
             width: 28%;
             padding-left: 6px;
+            margin-top: 0;
         }
 
     }
