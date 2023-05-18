@@ -107,6 +107,7 @@
         }
         
         &--big {
+            object-fit: cover;
 
             @media (min-width: $mobile-width) {
                 width: 84px;
