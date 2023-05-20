@@ -1,0 +1,71 @@
+.form {
+    
+    @media (min-width: $mobile-width) {
+        margin-top: 40px;
+    }
+
+    @media (min-width: $tablet-width) {
+        margin-top: 66px;
+    }
+    
+    &__program-wrapper {
+        display: flex;
+
+        @media (min-width: $mobile-width) {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        @media (min-width: $tablet-width) {
+            gap: 72px;
+        }
+
+        @media (min-width: $desktop-width) {
+            gap: 80px;
+            flex-direction: row;
+        }
+    }
+
+    &__catinfo-container {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $mobile-width) {
+            gap: 14px;
+        }
+
+        @media (min-width: $tablet-width) {
+            gap: 20px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 570px;
+        }
+
+    }
+
+    &__catgoal-container {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+
+        @media (min-width: $mobile-width) {
+            border-top: 1px solid $grey-line-third;
+            border-bottom: 1px solid $grey-line-third;
+            padding-top: 22px;
+            padding-bottom: 18px;
+        }
+
+
+        @media (min-width: $tablet-width) {
+            padding: 25px 0 25px 28px;
+            border: 1px solid $grey-line-third;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 570px;
+        }
+
+    }
+
+}

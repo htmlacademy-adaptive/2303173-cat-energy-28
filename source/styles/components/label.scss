@@ -1,0 +1,38 @@
+.label-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+
+    &__text {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $grey-very-dark;
+
+        @media (min-width: $mobile-width) {
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+    }
+
+    &--radio {
+        
+        @media (min-width: $mobile-width) {
+            gap: 15px;
+        }
+
+        @media (min-width: $tablet-width) {
+            gap: 20px;
+        }
+
+    }
+
+}
+

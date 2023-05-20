@@ -52,5 +52,56 @@
         </nav>
       </div>
     </header>
+
+    <main>
+      <section class="form-section">
+        <h1 class="form-section__title">Подбор программы</h1>
+        <p class="form-section__description">ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ<br> ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА</p>
+
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__program-wrapper">
+            <div class="form__catinfo-container">
+              <label class="label-input">
+                <span class="label-input__text">ИМЯ:<sup>*</sup></span>
+                <input class="text-input" type="text" placeholder="БАРСИК" required>
+              </label>
+
+              <label class="label-input">
+                <span class="label-input__text">ВЕС (КГ):<sup>*</sup></span>
+                <input class="text-input" type="number" min="0" max="25" placeholder="7" required>
+              </label>
+
+              <label class="label-input">
+                <span class="label-input__text">ВОЗРАСТ (ЛЕТ):</span>
+                <input class="text-input" type="number" min="0" max="25" placeholder="7">
+              </label>
+            </div>
+
+            <div class="form__catgoal-container">
+              <label class="label-input label-input--radio">
+                <input class="radio-input visually-hidden" type="radio" name="radio"> 
+                <span class="radio-input__button"></span>
+                <span class="label-input__text">ПОХУДЕНИЕ</span>
+              </label>
+              
+              <label class="label-input label-input--radio">
+                <input class="radio-input visually-hidden" type="radio" name="radio"> 
+                <span class="radio-input__button"></span>
+                <span class="label-input__text">НАБОР МАССЫ</span>
+              </label>
+
+              <label class="label-input label-input--radio">
+                <input class="radio-input visually-hidden" type="radio" name="radio">
+                <span class="radio-input__button"></span>
+                <span class="label-input__text">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/slder.js"></script>
   </body>
 </html>

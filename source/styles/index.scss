@@ -13,6 +13,9 @@
 // Catalog.html
 @import "./components/catalog-page.scss";
 
+// Form.htnl
+@import "./components/form-page.scss";
+
 // Хедер
 @import "./components/header.scss";
 
@@ -57,3 +60,15 @@
 
 // Дополнительный товар
 @import "./components/product-item.scss";
+
+// Блок с формой
+@import "./components/form.scss";
+
+// Лейбл
+@import "./components/label.scss";
+
+// Текстовый инпут
+@import "./components/text-input.scss";
+
+// Радио инпут 
+@import "./components/radio-input.scss";
