@@ -1,0 +1,26 @@
+.grey-button {
+    width: 100%;
+
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    color: $grey-very-dark;
+    font-size: 16px;
+    line-height: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background: $grey-background;
+    border: transparent;
+
+    &:hover {
+        background: $grey-line-fourth;
+    }
+
+    &:active {
+        background: $grey-line-fourth;
+        opacity: 0.7;
+    }
+    
+}

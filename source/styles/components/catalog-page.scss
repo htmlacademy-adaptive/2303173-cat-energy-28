@@ -1,0 +1,145 @@
+.catalog-products {
+
+    @media (min-width: $mobile-width) {
+        margin-top: 26px;
+    }
+
+    @media (min-width: $tablet-width) {
+        padding: 0 30px 68px 30px;
+        margin-top: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 0 110px 98px 110px;
+        margin-top: 188px;
+    }
+
+    &__title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+
+        @media (max-width: 767px) {
+            margin-left: 20px;
+        }
+
+        @media (max-width: $tablet-width) {
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+    }
+
+}
+
+.catalog-products__container {
+    display: flex;
+
+    @media (max-width: 767px) {
+        margin-top: 40px;
+        border-top: 1px solid $grey-line-fourth;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (min-width: $tablet-width) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-top: 84px;
+        gap: 80px;
+    }
+
+}
+
+
+.additional-products {
+    border-top: 2px solid $green;
+    position: relative;
+
+    @media (min-width: $mobile-width) {
+        padding: 42px 20px 36px 20px;
+        margin-top: 40px;
+    }
+
+    @media (min-width: $tablet-width) {
+        padding: 92px 30px 76px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 92px 110px 86px 110px;
+    }
+
+    &__title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+        display: inline-block;
+        background: $white;
+        position: absolute;
+
+        @media (min-width: $mobile-width) {
+            font-size: 24px;
+            line-height: 24px;
+            top: -16px;
+            left: 0;
+            padding: 0 20px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 36px;
+            line-height: 36px;
+            padding: 0 36px;
+            top: -24px;
+            left: 30px;
+        }
+
+        @media (min-width: $desktop-width) {
+            left: 70px;
+            padding: 0 40px;
+        }
+
+    }
+
+    &__wrapper {
+        display: flex;
+
+        @media (min-width: $mobile-width) {
+            flex-direction: column;
+            gap: 34px;
+        }
+
+        @media (min-width: $tablet-width) {
+            gap: 69px;
+        }
+
+        @media (min-width: $desktop-width) {
+            gap: 80px;
+            flex-direction: row;
+        }
+
+    }
+
+    &__container {
+        border-top: 1px solid $grey-line-third; 
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $desktop-width) {
+            width: 894px;
+        }
+
+    }
+
+}
