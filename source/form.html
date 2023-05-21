@@ -63,35 +63,35 @@
             <div class="form__catinfo-container">
               <label class="label-input">
                 <span class="label-input__text">ИМЯ:<sup>*</sup></span>
-                <input class="text-input" type="text" placeholder="БАРСИК" required>
+                <input class="text-input" type="text" placeholder="БАРСИК" name="cat-name">
               </label>
 
               <label class="label-input">
                 <span class="label-input__text">ВЕС (КГ):<sup>*</sup></span>
-                <input class="text-input" type="number" min="0" max="25" placeholder="7" required>
+                <input class="text-input" type="number" min="0" max="25" placeholder="7" name="cat-weight">
               </label>
 
               <label class="label-input">
                 <span class="label-input__text">ВОЗРАСТ (ЛЕТ):</span>
-                <input class="text-input" type="number" min="0" max="25" placeholder="7">
+                <input class="text-input" type="number" min="0" max="25" placeholder="7" name="cat-age">
               </label>
             </div>
 
             <div class="form__catgoal-container">
               <label class="label-input label-input--radio">
-                <input class="radio-input visually-hidden" type="radio" name="radio" checked> 
+                <input class="radio-input visually-hidden" type="radio" name="radio" value="weight-loss" checked> 
                 <span class="radio-input__button"></span>
                 <span class="label-input__text">ПОХУДЕНИЕ</span>
               </label>
               
               <label class="label-input label-input--radio">
-                <input class="radio-input visually-hidden" type="radio" name="radio"> 
+                <input class="radio-input visually-hidden" type="radio" name="radio" value="weight-gain"> 
                 <span class="radio-input__button"></span>
                 <span class="label-input__text">НАБОР МАССЫ</span>
               </label>
 
               <label class="label-input label-input--radio">
-                <input class="radio-input visually-hidden" type="radio" name="radio">
+                <input class="radio-input visually-hidden" type="radio" name="radio" value="need-advice">
                 <span class="radio-input__button"></span>
                 <span class="label-input__text">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
               </label>
@@ -103,7 +103,7 @@
             <div class="form__contact-container">
               <label class="label-input label-input--with-icon">
                 <span class="label-input__text">E-MAIL<sup>*</sup></span>
-                <input class="text-input text-input--with-icon" type="email" placeholder="кuklachev@gmail.com" required>
+                <input class="text-input text-input--with-icon" type="email" placeholder="кuklachev@gmail.com" name="email">
                 <svg class="text-input__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -111,18 +111,57 @@
 
               <label class="label-input label-input--with-icon">
                 <span class="label-input__text">ТЕЛЕФОН:<sup>*</sup></span>
-                <input class="text-input text-input--with-icon" type="tel" placeholder="8 (960) 900-60-90" required>
+                <input class="text-input text-input--with-icon" type="tel" placeholder="8 (960) 900-60-90" name="phone-number">
                 <svg class="text-input__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </label>
             </div>
           </div>
+
+          <div class="form__comment-wrapper">
+            <h2 class="form__subtitle">Комментарий</h2>
+            <textarea class="form__textarea" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА" name="additional-info"></textarea>
+          </div>
+
+          <div class="form__additional-wrapper">
+            <h2 class="form__subtitle">Дополнительно</h2>
+            <div class="form__additional-container">
+              <label class="label-input label-input--radio">
+                <input class="radio-checkbox visually-hidden" type="checkbox" checked value="sweetener">
+                <span class="radio-checkbox__button"></span>
+                <span class="label-input__text">САХАРОЗАМЕНИТЕЛЬ</span>
+              </label>
+
+              <label class="label-input label-input--radio">
+                <input class="radio-checkbox visually-hidden" type="checkbox" value="water">
+                <span class="radio-checkbox__button"></span>
+                <span class="label-input__text">ПИТЬЕВАЯ ВОДА</span>
+              </label>
+
+              <label class="label-input label-input--radio">
+                <input class="radio-checkbox visually-hidden" type="checkbox" value="milk">
+                <span class="radio-checkbox__button"></span>
+                <span class="label-input__text">МОЛОКО</span>
+              </label>
+
+              <label class="label-input label-input--radio">
+                <input class="radio-checkbox visually-hidden" type="checkbox" value="vitamins">
+                <span class="radio-checkbox__button"></span>
+                <span class="label-input__text">ВИТАМИНЫ</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__button-container">
+            <button class="green-button">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <p class="form__text-prompt">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
 
       <section class="location-section">
-        <div class="adress">
+        <div class="adress adress--grey">
           <h4 class="adress__title">ПРИГЛАШАЕМ<br> К СОТРУДНИЧЕСТВУ<br> ДИЛЕРОВ!</h4>
           <div>
             <p class="adress__text">ул. Большая<br> Конюшенная, д. 19/8</p>
