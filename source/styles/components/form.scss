@@ -14,14 +14,17 @@
         @media (min-width: $mobile-width) {
             flex-direction: column;
             gap: 24px;
+            padding: 0 20px;
         }
 
         @media (min-width: $tablet-width) {
             gap: 72px;
+            padding: 0 68px;
         }
 
         @media (min-width: $desktop-width) {
             gap: 80px;
+            padding: 0 110px;
             flex-direction: row;
         }
     }
@@ -64,6 +67,78 @@
 
         @media (min-width: $desktop-width) {
             width: 570px;
+        }
+
+    }
+
+    &__contact-wrapper {
+        border-top: 2px solid $green;
+        position: relative;
+
+        @media (min-width: $mobile-width) {
+            padding: 68px 20px 40px 20px;
+            margin-top: 38px;
+        }
+
+        @media (min-width: $tablet-width) {
+            padding: 88px 68px;
+            margin-top: 98px;
+        }
+
+        @media (min-width: $desktop-width) {
+            padding: 88px 110px 90px 110px;
+            margin-top: 90px;
+        }
+
+    }
+
+    &__contact-container {
+        display: flex;
+
+        @media (min-width: $mobile-width) {
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        @media (min-width: $tablet-width) {
+            gap: 20px;
+        }
+        
+        @media (min-width: $desktop-width) {
+            gap: 78px;
+            flex-direction: row;
+        }
+
+    }
+
+    &__subtitle {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+        background: $white;
+        position: absolute;
+
+        @media (min-width: $mobile-width) {
+            font-size: 24px;
+            line-height: 26px;
+            top: -16px;
+            padding-left: 20px;
+            padding-right: 14px;
+            max-width: 222px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 36px;
+            line-height: 36px;
+            padding: 0 42px 0 40px;
+            max-width: 600px;
+            top: -22px;
+            left: 30px;
+        }
+
+        @media (min-width: $desktop-width) {
+            left: 70px;
         }
 
     }

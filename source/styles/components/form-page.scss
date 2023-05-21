@@ -1,16 +1,16 @@
 .form-section {
 
     @media (min-width: $mobile-width) {
-        padding: 26px 20px 32px 20px;
+        padding: 26px 0 32px 0;
     }
 
     @media (min-width: $tablet-width) {
-        padding: 0px 66px 72px 70px;
+        padding: 0px 0px 72px 0px;
         margin-top: 60px;
     }
 
     @media (min-width: $desktop-width) {
-        padding: 0 110px 82px 110px;
+        padding: 0 0 82px 0;
         margin-top: 186px;
     }
 
@@ -23,11 +23,17 @@
         @media (min-width: $mobile-width) {
             font-size: 36px;
             line-height: 36px;
+            margin-left: 20px;
         }
 
         @media (min-width: $tablet-width) {
             font-size: 60px;
             line-height: 60px;
+            margin-left: 68px;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin-left: 110px;
         }
 
     }
@@ -42,16 +48,19 @@
             font-size: 14px;
             line-height: 18px;
             margin-top: 36px;
+            margin-left: 20px;
         }
 
         @media (min-width: $tablet-width) {
             font-size: 20px;
             line-height: 30px;
             margin-top: 54px;
+            margin-left: 68px;
         }
 
         @media (min-width: $desktop-width) {
             margin-top: 56px;
+            margin-left: 110px;
         }
 
     }

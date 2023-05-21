@@ -20,5 +20,32 @@
         line-height: 30px;
         height: 52px;
     }
+
+    &--with-icon {
+
+        @media (min-width: $mobile-width) {
+            padding: 0 50px 0 10px;
+        }
+
+        @media (min-width: $tablet-width) {
+            padding: 0 56px 0 20px;
+        }
+
+    }
+
+    &__icon {
+        position: absolute;
+
+        @media (min-width: $mobile-width) {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+        }
+
+        @media (min-width: $tablet-width) {
+            right: 18px;
+        }
+
+    }
     
 }
