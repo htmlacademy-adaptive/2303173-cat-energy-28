@@ -1,0 +1,148 @@
+@import "./green-button.scss";
+
+.product-item {
+    display: flex;
+    border-bottom: 1px solid $grey-line-third;
+
+    @media (min-width: $mobile-width) {
+        flex-wrap: wrap;
+        padding: 12px 0 19px 0;
+    }
+
+    @media (min-width: $tablet-width) {
+        border-left: 1px solid $grey-line-third;
+        border-right: 1px solid $grey-line-third;
+        padding: 26px 38px 28px 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 894px;
+        padding: 15px 0 16px 0;
+        border-left: transparent;
+        border-right: transparent;
+        flex-wrap: nowrap;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: $mobile-width) {
+            width: 100%;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 64%;
+            margin-top: 0;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 35%;
+            margin-top: 0;
+        }
+
+    }
+
+    &__name-title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        color: $black;
+
+        @media (min-width: $mobile-width) {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+    }
+
+    &__size {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: $mobile-width) {
+            width: 50%;
+            margin-top: 13px;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 22%;
+            flex-direction: row-reverse;
+            margin-top: 0;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 27%;
+            padding-left: 13px;
+            flex-direction: row;
+            margin-top: 0;
+        }
+
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: $mobile-width) {
+            width: 50%;
+            flex-direction: row-reverse;
+            margin-top: 13px;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 14%;
+            margin-top: 0;
+        }
+        
+        @media (min-width: $desktop-width) {
+            padding-left: 14px;
+            margin-top: 0;
+            flex-direction: row;
+        }
+
+    }
+
+    &__text {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        color: $grey-very-dark;
+        
+        @media (min-width: $mobile-width) {
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+    }
+
+    &__button {
+
+        @media (min-width: $mobile-width) {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        @media (min-width: $tablet-width) {
+            margin-top: 25px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 28%;
+            padding-left: 6px;
+            margin-top: 0;
+        }
+
+    }
+
+}

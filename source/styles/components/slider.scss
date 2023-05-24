@@ -1,0 +1,160 @@
+.compare-slider {
+
+    @media (min-width: $desktop-width) {
+        position: absolute;
+        z-index: 6;
+        top: 0;
+        right: 110px;
+    }
+
+    &__drag-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+.compare-slider__wrapper {
+    position: relative;
+   
+    @media (min-width: $mobile-width) {
+        width: 280px;
+        height:256px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 560px;
+        height: 512px;
+        margin-top: 104px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-top: 0;
+    }
+
+}
+
+.compare-slider__images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    & .compare-slider__image-first {
+        height: 100%;
+        width: 100%;
+        background: url("../img/example/slim-cat-example.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        background-position: 100% 0;
+    }
+
+    & .compare-slider__image-second {
+        height: 100%;
+        width: 100%;
+        background: url("../img/example/fat-cat-example.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+    }
+
+}
+
+.compare-slider__slider {
+
+    @media (min-width: $mobile-width) {
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        width: 100%;
+        height: 256px;
+    }
+
+    @media (min-width: $tablet-width) {
+        height: 512px;
+    }
+
+    & input {
+        appearance: none;
+        outline: none;
+        width: 100%;
+        background: transparent;
+        margin: 0;
+    }
+
+    & input::-webkit-slider-thumb {
+
+        @media (min-width: $mobile-width) {
+            appearance: none;
+            height: 256px;
+            width: 4px;
+            background: none;
+            cursor: col-resize;
+        }
+
+        @media (min-width: $tablet-width) {
+            height: 512px;
+        }
+
+    }
+
+    & .compare-slider__drag-line {
+
+        @media (min-width: $mobile-width) {
+            width: 4px;
+            height: 256px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        @media (min-width: $tablet-width) {
+            height: 512px;
+        }
+
+        &::before, &::after {
+            
+            @media (min-width: $mobile-width) {
+                position: absolute;
+                width: 100%;
+                content: "";
+                background: #666666;
+                height: 108px;
+            }
+
+            @media (min-width: $tablet-width) {
+                height: 236px;
+            }
+
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        & span {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #666666;
+            border-radius: 50%; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $white;
+        }
+
+    }
+
+}
+
+
+

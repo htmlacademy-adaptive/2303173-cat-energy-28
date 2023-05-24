@@ -1,0 +1,26 @@
+.green-button {
+    width: 100%;
+
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    color: $white;
+    font-size: 16px;
+    line-height: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background: $green;
+    border: transparent;
+
+    &:hover {
+        background: $green-second;
+    }
+
+    &:active {
+        background: $green-second;
+        opacity: 0.7;
+    }
+    
+}

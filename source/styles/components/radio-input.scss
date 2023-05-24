@@ -1,0 +1,41 @@
+.radio-input {
+
+    &__button {
+        border-radius: 50%;
+        border: 1px solid $grey-line-third;
+        position: relative;
+
+        @media (min-width: $mobile-width) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 40px;
+            height: 40px;
+        }
+
+    }
+
+}
+
+.radio-input:checked + .radio-input__button::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: $green;
+    content: '';
+
+    @media (min-width: $mobile-width) {
+        width: 13px;
+        height: 13px;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 18px;
+        height: 18px;
+    }
+
+}

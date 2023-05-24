@@ -12,7 +12,7 @@
     <header class="header header--absolute">
       <div class="header__inner">
 
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="./index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="./img/logo/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet.svg">
@@ -20,7 +20,7 @@
           </picture>
         </a>
 
-        <a class="header__logo-mobile" href="#">
+        <a class="header__logo-mobile" href="./index.html">
           <img class="header__logo-mobile-text" src="./img/logo/logo-mobile-text.svg" alt="Логотип Кэт Энерджи.">
         </a>
 
@@ -40,13 +40,13 @@
         <nav class="navigation navigation--hidden">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active navigation__link--white" href="#">ГЛАВНАЯ</a>
+              <a class="navigation__link" href="./index.html">ГЛАВНАЯ</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--white" href="./catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+              <a class="navigation__link" href="./catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--white" href="./form.html">ПОДБОР ПРОГРАММЫ</a>
+              <a class="navigation__link  navigation__link--active-green" href="#">ПОДБОР ПРОГРАММЫ</a>
             </li>
           </ul>
         </nav>
@@ -54,142 +54,114 @@
     </header>
 
     <main>
-      <section class="hero-section">
-        <div class="hero">
-          <h1 class="hero__title">Функциональное питание для котов</h1>
-          <p class="hero__description">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="./img/hero/hero-can-desktop.png">
-            <source media="(min-width: 768px)" srcset="./img/hero/hero-can-tablet.png">
-            <img class="hero__product-image" src="./img/hero/hero-can-mobile.png" alt="Кэт энерджи про. Курица. 500 грамм.">
-          </picture>
-          <a class="hero__link" href="./form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
-          <div class="hero__background">
-            <img class="hero__background-image" src="./img/hero/hero-bg.png" alt="Задний фон с котиком.">
-          </div>
-        </div>
-      </section>
+      <section class="form-section">
+        <h1 class="form-section__title">Подбор программы</h1>
+        <p class="form-section__description">ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ<br> ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА</p>
 
-      <section class="catalog-banners-section">
-        <div class="catalog-banner">
-          <div class="catalog-banner__text-container">
-            <h3 class="catalog-banner__title">ПОХУДЕНИЕ</h3>
-            <p class="catalog-banner__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          </div>
-          <div class="catalog-banner__link-container">
-            <a class="catalog-banner__link" href="#">
-              <p class="catalog-banner__link-text">КАТАЛОГ SLIM</p>
-              <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
-              </svg>
-            </a>
-          </div>
-          <div class="catalog-banner__icon-container">
-            <img class="catalog-banner__icon" src="./img/catalog-banner/cat-icon2.svg" alt="Толстый кот.">
-          </div>
-        </div>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__program-wrapper">
+            <div class="form__catinfo-container">
+              <label class="label-input">
+                <span class="label-input__text">ИМЯ:<sup>*</sup></span>
+                <input class="text-input" type="text" placeholder="БАРСИК" name="cat-name">
+              </label>
 
-        <div class="catalog-banner">
-          <div class="catalog-banner__text-container">
-            <h3 class="catalog-banner__title">НАБОР МАССЫ</h3>
-            <p class="catalog-banner__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          </div>
-          <div class="catalog-banner__link-container">
-            <a class="catalog-banner__link" href="#">
-              <p class="catalog-banner__link-text">КАТАЛОГ PRO</p>
-              <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
-              </svg>
-            </a>
-          </div>
-          <div class="catalog-banner__icon-container catalog-banner__icon-container--second">
-            <img class="catalog-banner__icon catalog-banner__icon--second" src="./img/catalog-banner/cat-icon.svg" alt="Худой кот.">
-          </div>
-        </div>
-      </section>
+              <label class="label-input">
+                <span class="label-input__text">ВЕС (КГ):<sup>*</sup></span>
+                <input class="text-input" type="number" min="0" max="25" placeholder="7" name="cat-weight">
+              </label>
 
-      <section class="info-banner-section">
-        <h2 class="info-banner-section__title">Как это работает</h2>
-        <div class="info-banner-section__content">
-          <div class="info-banner-section__content-line">
-            <div class="info-banner">
-              <img class="info-banner__icon" src="./img/info-banner/leaf-icon.svg" alt="Иконка листик.">
-              <p class="info-banner__text">Функциональное питание содержит только полезные питательные вещества.</p>
-              <p class="info-banner__number">1</p>
-            </div>
-            <div class="info-banner">
-              <img class="info-banner__icon" src="./img/info-banner/powder-icon.svg" alt="Иконка порошок.">
-              <p class="info-banner__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-              <p class="info-banner__number">2</p>
-            </div>
-          </div>
-          <div class="info-banner-section__content-line">
-            <div class="info-banner">
-              <img class="info-banner__icon" src="./img/info-banner/cutlery-icon.svg" alt="Иконка столовые приборы.">
-              <p class="info-banner__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-              <p class="info-banner__number">3</p>
-            </div>
-            <div class="info-banner">
-              <img class="info-banner__icon" src="./img/info-banner/scales-icon.svg" alt="Иконка весы.">
-              <p class="info-banner__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-              <p class="info-banner__number">4</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="example-section">
-        <div class="example-section__background"></div>
-        <h2 class="example-section__title">Живой пример</h2>
-        <p class="example-section__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example-section__container">
-          <div class="example-section__info-wrapper">
-            <div class="info-item">
-              <p class="info-item__text">5 КГ</p>
-              <div class="info-item__additional-container">
-                <p class="info-item__additional-text">снижение веса</p>
-              </div>
+              <label class="label-input">
+                <span class="label-input__text">ВОЗРАСТ (ЛЕТ):</span>
+                <input class="text-input" type="number" min="0" max="25" placeholder="7" name="cat-age">
+              </label>
             </div>
 
-            <div class="info-item">
-              <p class="info-item__text">60 ДНЕЙ</p>
-              <div class="info-item__additional-container">
-                <p class="info-item__additional-text">затрачено времени</p>
-              </div>
-            </div>
-          </div>
-          <div class="example-section__price">
-            <p class="example-section__price-text">ЗАТРАТЫ НА ПИТАНИЕ:</p>
-            <p  class="example-section__price-text">15000 РУБ.</p>
-          </div>
-        </div>
+            <div class="form__catgoal-container">
+              <label class="label-input label-input--radio">
+                <input class="radio-input visually-hidden" type="radio" name="radio" value="weight-loss" checked> 
+                <span class="radio-input__button"></span>
+                <span class="label-input__text">ПОХУДЕНИЕ</span>
+              </label>
+              
+              <label class="label-input label-input--radio">
+                <input class="radio-input visually-hidden" type="radio" name="radio" value="weight-gain"> 
+                <span class="radio-input__button"></span>
+                <span class="label-input__text">НАБОР МАССЫ</span>
+              </label>
 
-        <div class="compare-slider">
-          <div class="compare-slider__wrapper">
-            <div class="compare-slider__images">
-              <div class="compare-slider__image-first"></div>
-              <div class="compare-slider__image-second"></div>
-            </div>
-
-            <div class="compare-slider__slider">
-              <div class="compare-slider__drag-line">
-                <span class="compare-slider__drag-icon">
-                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 0L0 9L8 18V0Z" fill="#666666"/>
-                    <path d="M24 9L16 0V18L24 9Z" fill="#666666"/>
-                  </svg>                    
-                </span>
-              </div>
-              <input type="range" min="0" max="100" value="50">
+              <label class="label-input label-input--radio">
+                <input class="radio-input visually-hidden" type="radio" name="radio" value="need-advice">
+                <span class="radio-input__button"></span>
+                <span class="label-input__text">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
+              </label>
             </div>
           </div>
-        </div>
+
+          <div class="form__contact-wrapper">
+            <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
+            <div class="form__contact-container">
+              <label class="label-input label-input--with-icon">
+                <span class="label-input__text">E-MAIL<sup>*</sup></span>
+                <input class="text-input text-input--with-icon" type="email" placeholder="кuklachev@gmail.com" name="email">
+                <svg class="text-input__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </label>
+
+              <label class="label-input label-input--with-icon">
+                <span class="label-input__text">ТЕЛЕФОН:<sup>*</sup></span>
+                <input class="text-input text-input--with-icon" type="tel" placeholder="8 (960) 900-60-90" name="phone-number">
+                <svg class="text-input__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__comment-wrapper">
+            <h2 class="form__subtitle">Комментарий</h2>
+            <textarea class="form__textarea" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА" name="additional-info"></textarea>
+          </div>
+
+          <div class="form__additional-wrapper">
+            <h2 class="form__subtitle">Дополнительно</h2>
+            <div class="form__additional-container">
+              <label class="label-input label-input--radio">
+                <input class="radio-checkbox visually-hidden" type="checkbox" checked value="sweetener">
+                <span class="radio-checkbox__button"></span>
+                <span class="label-input__text">САХАРОЗАМЕНИТЕЛЬ</span>
+              </label>
+
+              <label class="label-input label-input--radio">
+                <input class="radio-checkbox visually-hidden" type="checkbox" value="water">
+                <span class="radio-checkbox__button"></span>
+                <span class="label-input__text">ПИТЬЕВАЯ ВОДА</span>
+              </label>
+
+              <label class="label-input label-input--radio">
+                <input class="radio-checkbox visually-hidden" type="checkbox" value="milk">
+                <span class="radio-checkbox__button"></span>
+                <span class="label-input__text">МОЛОКО</span>
+              </label>
+
+              <label class="label-input label-input--radio">
+                <input class="radio-checkbox visually-hidden" type="checkbox" value="vitamins">
+                <span class="radio-checkbox__button"></span>
+                <span class="label-input__text">ВИТАМИНЫ</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__button-container">
+            <button class="green-button">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <p class="form__text-prompt">* — Обязательные поля</p>
+          </div>
+        </form>
       </section>
 
       <section class="location-section">
-        <div class="adress">
+        <div class="adress adress--grey">
           <h4 class="adress__title">ПРИГЛАШАЕМ<br> К СОТРУДНИЧЕСТВУ<br> ДИЛЕРОВ!</h4>
           <div>
             <p class="adress__text">ул. Большая<br> Конюшенная, д. 19/8</p>

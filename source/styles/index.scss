@@ -1,0 +1,77 @@
+// Переменные
+@import "./global/variables.scss";
+
+// Глобальные стили
+@import "./global/global.scss";
+
+// Шрифты
+@import "./global/fonts.scss";
+
+// Index.html 
+@import "./components/index-page.scss";
+
+// Catalog.html
+@import "./components/catalog-page.scss";
+
+// Form.htnl
+@import "./components/form-page.scss";
+
+// Хедер
+@import "./components/header.scss";
+
+// Хиро блок
+@import "./components/hero.scss";
+
+// Каталог баннер
+@import "./components/catalog-banner.scss";
+
+// Инфо баннер
+@import "./components/info-banner.scss";
+
+// Блок с адресом
+@import "./components/adress-block.scss";
+
+// Карта
+@import "./components/map.scss";
+
+// Футер
+@import "./components/footer.scss";
+
+// Пример
+@import "./components/info-item.scss";
+
+// Слайдер с котиками
+@import "./components/slider.scss";
+
+// Карточка товара
+@import "./components/product-card.scss";
+
+// Карточка показать больше товаров
+@import "./components/more-products-card.scss";
+
+// Зеленая кнопка
+@import "./components/green-button.scss";
+
+// Серая кнопка
+@import "./components/grey-button.scss";
+
+// Баннер с подарком
+@import "./components/gift-banner.scss";
+
+// Дополнительный товар
+@import "./components/product-item.scss";
+
+// Блок с формой
+@import "./components/form.scss";
+
+// Лейбл
+@import "./components/label.scss";
+
+// Текстовый инпут
+@import "./components/text-input.scss";
+
+// Радио инпут 
+@import "./components/radio-input.scss";
+
+// Радио чекбокс
+@import "./components/radio-checkbox.scss";

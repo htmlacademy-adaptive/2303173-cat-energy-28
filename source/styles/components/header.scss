@@ -1,0 +1,241 @@
+// Контейнер
+.header {
+
+    &--absolute {
+
+        @media (min-width: $desktop-width) {
+            position: absolute;
+            width: 1440px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            z-index: 5;
+        }
+
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+        background: $white;
+
+        @media (min-width: $mobile-width) {
+            height: 66px;
+            padding: 0 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 767px) {
+            border-bottom: 1px solid $grey-line;
+        }
+
+        @media (min-width: $tablet-width) {
+            height: 56px;
+            padding: 0 30px;
+            align-items: center;
+        }
+
+        @media (min-width: $desktop-width) {
+            height: 140px;
+            padding: 70px 110px 40px 110px;
+            background: transparent;
+        }
+
+    }
+
+}
+
+// Логотип
+.header__logo {
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+
+    & .header__logo-image {
+        
+        @media (min-width: $mobile-width) {
+            width: 34px;
+            height: 38px;
+        }
+    
+        @media (min-width: $tablet-width) {
+            width: 174px;
+            height: 52px;
+        }
+    
+        @media (min-width: $desktop-width) {
+            width: 202px;
+            height: 59px;
+        }
+
+    }
+
+}
+
+// Текстовый логотип на мобилке
+.header__logo-mobile {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+
+    & .header__logo-mobile-text {
+        width: 101px;
+        height: 18px;
+    }
+
+}
+
+// Бургер меню
+.burger {
+    border: transparent;
+    background: transparent;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    
+    &__icon {
+        width: 24px;
+        height: 24px;
+
+        &--active {
+            display: block;
+        }
+
+        &--hidden {
+            display: none;
+        }
+        
+    }
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+
+}
+
+// Навигация
+.navigation {
+    
+    @media (max-width: 767px) {
+        position: absolute;
+        left: 50%;
+        top: 66px;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 5;
+        background: $white;
+    }
+
+    &__list {
+        
+        @media (min-width: $tablet-width) {
+            display: flex;
+        }
+
+    }
+
+    &__item:not(:last-child) {
+
+        @media (min-width: $tablet-width) {
+            margin-right: 34px;
+        }
+
+    }
+
+    &__link {
+        font-family: "Oswald";
+        font-style: normal;
+        text-decoration: none;
+
+        @media (max-width: 767px) {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+            color: $black;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 23px 0 22px 0;
+
+            border-bottom: 1px solid $grey-line;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: $black;
+
+            &--active {
+                padding-bottom: 8px;
+                border-bottom: 2px solid $green;
+            }
+
+            &--active-green {
+                border-bottom: 2px solid $green;
+                padding-bottom: 8px;
+            }
+
+        }
+
+        @media (min-width: $desktop-width) {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: $black;
+
+            &--active {
+                border-bottom: 2px solid $white;
+                padding-bottom: 6px;
+            }
+
+            &--active-green {
+                border-bottom: 2px solid $green;
+                padding-bottom: 6px;
+            }
+
+            &--white {
+                color: $white;
+            }
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+    }
+
+    &--hidden {
+        
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+}
